@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="640d4442-6dcb-4719-873d-56aac7df4f44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php71/conf/php.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/my.cnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/mysqld.cnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php71/Dockerfile-7.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php71/Dockerfile-7.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php71/Dockerfile的副本" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php71/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/php71/php.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,12 +99,14 @@
         <counts>
           <entry key="conf" value="39" />
           <entry key="ini" value="4" />
+          <entry key="md" value="126" />
           <entry key="yml" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="4" />
+          <entry key="Markdown" value="126" />
           <entry key="SmartyConfig" value="39" />
           <entry key="YAML" value="158" />
         </counts>
@@ -135,7 +128,9 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-5055" />
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -149,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php71/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="32" column="38" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="38" />
+            <state relative-caret-position="141">
+              <caret line="11" column="87" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -172,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="9" column="451" selection-start-line="9" selection-start-column="445" selection-end-line="9" selection-end-column="451" />
             </state>
           </provider>
         </entry>
@@ -208,6 +203,7 @@
         <option value="$PROJECT_DIR$/php71/php.ini" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -282,18 +278,18 @@
       <workItem from="1541823093758" duration="14000" />
       <workItem from="1541823407445" duration="198000" />
       <workItem from="1541823626207" duration="5436000" />
-      <workItem from="1541831088195" duration="4883000" />
+      <workItem from="1541831088195" duration="5460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24156000" />
+    <option name="totallyTimeSpent" value="24733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18240343" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18240343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -361,13 +357,6 @@
     <entry file="file://$PROJECT_DIR$/compose/docker-composeMysql56.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -380,13 +369,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php71/conf/php.ini">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php71/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql/my.cnf">
       <provider selected="true" editor-type-id="text-editor" />
@@ -418,10 +400,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="451" selection-start-line="9" selection-start-column="445" selection-end-line="9" selection-end-column="451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php71/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="11" column="87" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-5055" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
