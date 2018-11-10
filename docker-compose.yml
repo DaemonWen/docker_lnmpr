@@ -6,10 +6,7 @@ services:
         ports:
           - "3306:3306"
         volumes:
-          - /Volumes/Data/docker/mysql:/var/lib/mysql
-          - /Volumes/Data/log/mysql:/var/log/mysql
-          - /Volumes/Data/docker/run/mysqlmysqld:/var/run/mysqld
-
+          - /Volumes/Data/docker/mysqlvar:/var/lib/mysql
         environment:
           MYSQL_ROOT_PASSWORD: 123456
 
@@ -32,6 +29,7 @@ services:
         volumes:
           - /Volumes/Data/www:/www
           - /Volumes/Data/docker/php:/data
+          - ./php71/php.ini:/usr/local/php/etc/php.ini #挂载配置文件
 
     nginx:
         container_name: lnmp_nginx
