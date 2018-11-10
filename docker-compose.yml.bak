@@ -1,0 +1,42 @@
+mysql:
+    build: ./mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - /Volumes/Data/docker/mysql:/var/lib/mysql
+      - /Volumes/Data/log/mysql:/var/log/mysql
+      - /Volumes/Data/docker/run/mysqlmysqld:/var/run/mysqld
+
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+
+redis:
+    build: ./redis
+    volumes:
+      - /Volumes/Data/docker/redis:/data
+    ports:
+      - "6379:6379"
+
+php:
+    build: ./php71
+    ports:
+      - "9000:9000"
+    links:
+      - "mysql"
+      - "redis"
+    volumes:
+      - /Volumes/Data/www:/www
+      - /Volumes/Data/docker/php:/data
+
+nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    links:
+      - "php"
+    volumes:
+      - /Volumes/Data/www:/www
+      - /Volumes/Data/docker/nginx:/data
+      - /Volumes/Data/dockerfile/docker-lnmpr-master/nginx/vhost:/usr/local/nginx/conf/vhost
+      - /Volumes/Data/dockerfile/docker-lnmpr-master/nginx/nginx.conf:/usr/local/nginx/conf/nginx.conf
+
