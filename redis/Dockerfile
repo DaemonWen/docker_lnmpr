@@ -8,7 +8,7 @@ RUN yum -y install epel-release && \
 RUN    yum install -y gcc automake autoconf libtool make gcc-c++ vixie-cron  wget zlib  file openssl-devel  zip  bash vim cyrus-sasl-devel  libyaml libyaml-devel unzip libvpx-devel openssl-devel  gd-devel libmcrypt-devel libmcrypt mcrypt mhash libmcrypt libmcrypt-devel libxml2 libxml2-devel bzip2 bzip2-devel curl curl-devel  freetype-devel bison libtool-ltdl-devel net-tools && \
     yum clean all
 
-COPY ./redis-3.2.6.tar.gz /tep/redis-3.2.6.tar.gz
+COPY ./redis-3.2.6.tar.gz /tmp/redis-3.2.6.tar.gz
 
 RUN cd /tmp && \
   #wget http://download.redis.io/releases/redis-3.2.6.tar.gz && \
