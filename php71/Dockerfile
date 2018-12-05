@@ -4,6 +4,7 @@ MAINTAINER AT <terry.dawu@gmail.com>
 ENV TZ "Asia/Shanghai"
 
 COPY redis-3.0.0.tgz /tmp/redis-3.0.0.tgz
+COPY php-7.1.24.tar.gz /tmp/php-7.1.24.tar.gz
 #COPY swoole-src-1.9.21.zip /tmp/swoole-src-1.9.21.zip
 
 RUN yum -y update && \
@@ -12,12 +13,12 @@ RUN yum -y update && \
 #    rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm && \
     yum install -y libmcrypt-devel && \
     cd /tmp && \
-    wget http://cn2.php.net/distributions/php-7.1.24.tar.gz && \
+#    wget http://cn2.php.net/distributions/php-7.1.24.tar.gz && \
     tar xzf php-7.1.24.tar.gz && \
     cd /tmp/php-7.1.24 && \
     ./configure \
       --prefix=/usr/local/php \
-      --with-mysqli --with-pdo-mysql --with-iconv-dir --with-freetype-dir --with-jpeg-dir --with-png-dir --with-zlib --with-libxml-dir --enable-simplexml --enable-xml --disable-rpath --enable-bcmath --enable-soap --enable-zip --with-curl --enable-fpm --with-fpm-user=nobody --with-fpm-group=nobody --enable-mbstring --enable-sockets --with-mcrypt --with-gd --enable-gd-native-ttf --with-openssl --with-mhash --enable-opcache && \
+      --with-mysqli --with-pdo-mysql --with-iconv-dir --with-freetype-dir --with-jpeg-dir --with-png-dir --with-zlib --with-libxml-dir --enable-simplexml --enable-xml --disable-rpath --enable-bcmath --enable-soap --enable-zip --with-curl --enable-fpm --with-fpm-user=nobody --with-fpm-group=nobody --enable-mbstring --enable-sockets --with-mcrypt --with-gd --enable-gd-native-ttf --with-openssl --with-mhash  && \
       make && \
       make install && \
       cd /tmp && \
@@ -26,7 +27,9 @@ RUN yum -y update && \
       /usr/local/php/bin/phpize  && \
       ./configure --with-php-config=/usr/local/php/bin/php-config && \
       make && \
-      make install
+      make install &&\
+#安装xdebug
+      /usr/local/php/bin/pecl install xdebug
 
 ADD php-fpm.conf /usr/local/php/etc/php-fpm.conf 
 ADD composer.phar /usr/local/bin/composer 

@@ -32,6 +32,7 @@ services:
           - /Volumes/Data/docker/php-tmp:/tmp/php #phpsession
           - ./php71/php.ini:/usr/local/php/etc/php.ini #挂载配置文件
 
+
     nginx:
         container_name: lnmp_nginx
         build: ./nginx
