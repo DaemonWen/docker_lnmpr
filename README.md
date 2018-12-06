@@ -14,7 +14,7 @@
     docker-compose up //构建镜像运行容器
    
  ```
-  
+  ------------------
   
  **2018.12.05 更新加上docker-sync**
  
@@ -27,7 +27,7 @@
   gem install docker-sync
  brew install fswatch
  brew install unison
- brew install eugenmayer/dockersync/unox   //安装这一步，如果是mac较新的系统为出错，改成  brew install unox --with-python3 试试
+ brew install eugenmayer/dockersync/unox   //安装这一步，如果是mac较新的系统可能会出错，改成  brew install unox --with-python3 试试
  ```
  - docker-sync的配置可以参考  https://github.com/EugenMayer/docker-sync/wiki/2.-Configuration
  
