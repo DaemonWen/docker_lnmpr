@@ -17,8 +17,9 @@
   
   
  **2018.12.05 更新加上docker-sync**
+ 
  ***目的***
- · 解决mac文件系统跟docker之间文件系统格式转换导致缓慢的问题 详情见 https://docs.docker.com/docker-for-mac/osxfs/#mounts
+ -  解决mac文件系统跟docker之间文件系统格式转换导致缓慢的问题 详情见 https://docs.docker.com/docker-for-mac/osxfs/#mounts
  
  
  - 安装docker-sync
