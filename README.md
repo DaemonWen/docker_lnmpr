@@ -15,3 +15,24 @@
    
  ```
   
+  
+ **2018.12.05 更新加上docker-sync**
+ ***目的***
+ · 解决mac文件系统跟docker之间文件系统格式转换导致缓慢的问题 详情见 https://docs.docker.com/docker-for-mac/osxfs/#mounts
+ 
+ 
+ - 安装docker-sync
+ ```
+  gem install docker-sync
+ brew install fswatch
+ brew install unison
+ brew install eugenmayer/dockersync/unox   //安装这一步，如果是mac较新的系统为出错，改成  brew install unox --with-python3 试试
+ ```
+ - docker-sync的配置可以参考  https://github.com/EugenMayer/docker-sync/wiki/2.-Configuration
+ 
+ 
+ 配置参考了:https://github.com/ninghao/nest 跟 https://ruby-china.org/topics/37289
+ 
+ ***注意***
+ 如果不需要使用docker-sync，需要把.env 文件重命名为其他文件即可
+ 
