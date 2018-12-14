@@ -38,6 +38,7 @@
  如果不需要使用docker-sync，需要把.env 文件重命名为其他文件即可
  
  ------------------------
- ###升级mojave后docker-sync无法使用，重新安装docker-sync后又可以使用。并且安装eugenmayer/dockersync/unox也不需要指定python3了
+***2018-12-14***
+升级mojave后docker-sync无法使用，重新安装docker-sync后又可以使用。并且安装eugenmayer/dockersync/unox也不需要指定python3了
  
  
