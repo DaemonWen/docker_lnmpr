@@ -44,7 +44,7 @@ RUN set -ex \
     # ---------- clear works ----------
     && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
     #阿里云
-    && composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+    && composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ \
     && echo -e "\033[42;37m Build Completed :).\033[0m\n"
 
 
