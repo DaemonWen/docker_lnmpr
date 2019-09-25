@@ -23,7 +23,8 @@ RUN apt-get update\
     && apt-get clean
 
 # Composer
-RUN curl -sS https://getcomposer.org/installer | php \
+RUN  wget https://mirrors.aliyun.com/composer/composer.phar \
+    && chmod u+x composer.phar \
     && mv composer.phar /usr/local/bin/composer \
     && composer self-update --clean-backups\
         #阿里云
