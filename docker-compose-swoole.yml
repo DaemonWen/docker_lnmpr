@@ -26,4 +26,6 @@ services:
     links:
       - "mysql"
       - "redis"
+    volumes:
+      - /www/code:/var/www/code
 

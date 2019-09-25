@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="640d4442-6dcb-4719-873d-56aac7df4f44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-swoole.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-swoole.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,20 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/easyswoole/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="674">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose-swoole.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -144,9 +145,9 @@
         <option value="$PROJECT_DIR$/php71/php.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/nginx/nginx.conf" />
+        <option value="$PROJECT_DIR$/hyperf/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose-swoole.yml" />
         <option value="$PROJECT_DIR$/easyswoole/Dockerfile" />
-        <option value="$PROJECT_DIR$/hyperf/Dockerfile" />
       </list>
     </option>
   </component>
@@ -255,7 +256,7 @@
       <workItem from="1549936437465" duration="29000" />
       <workItem from="1569327159778" duration="1736000" />
       <workItem from="1569375961302" duration="598000" />
-      <workItem from="1569398420196" duration="2433000" />
+      <workItem from="1569398420196" duration="4949000" />
     </task>
     <task id="LOCAL-00001" summary="配置xdebug">
       <created>1543979154738</created>
@@ -355,11 +356,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569401757494</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="调整swoole版本">
+      <created>1569403517464</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1569403517464</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65221000" />
+    <option name="totallyTimeSpent" value="67737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -401,7 +409,8 @@
     <MESSAGE value="easyswoole" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="调整composer" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整composer" />
+    <MESSAGE value="调整swoole版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整swoole版本" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/php/php.ini" />
@@ -551,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-swoole.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hyperf/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -567,8 +569,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/easyswoole/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="674">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-swoole.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
