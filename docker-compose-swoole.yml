@@ -24,6 +24,6 @@ services:
     ports:
       - "80:9501"
     links:
-      - "easy_mysql"
-      - "easy_redis"
-    volumes:
+      - "mysql"
+      - "redis"
+
