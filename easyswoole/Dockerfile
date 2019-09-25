@@ -10,9 +10,8 @@ RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo 'Asia/Shanghai' > /etc/timezone
 
 # Libs
-RUN apt-get update \
-RUN
-    apt-get install -y \
+RUN apt-get update
+RUN apt-get install -y \
     curl \
     wget \
     git \
