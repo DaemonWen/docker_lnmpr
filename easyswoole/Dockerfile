@@ -11,7 +11,8 @@ RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 
 # Libs
 RUN apt-get update \
-    && apt-get install -y \
+RUN
+    apt-get install -y \
     curl \
     wget \
     git \
