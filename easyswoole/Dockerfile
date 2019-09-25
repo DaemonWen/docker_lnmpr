@@ -10,8 +10,8 @@ RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo 'Asia/Shanghai' > /etc/timezone
 
 # Libs
-RUN apt-get update
-RUN apt-get install  \
+RUN apt-get update\
+    && apt-get install -y \
     curl \
     wget \
     git \
@@ -20,8 +20,7 @@ RUN apt-get install  \
     libssl-dev \
     libnghttp2-dev \
     libpcre3-dev \
-    && apt-get clean \
-    && apt-get autoremove
+    && apt-get clean
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php \
